@@ -8,7 +8,7 @@ export default function Home() {
   const [school, setSchool] = useState("");
   const [students, setStuds] = useState([]);
   const Subm = () => {
-    if(name !=""|| lastname!=""||school!=""||grade!=0){
+    if(name !=""&& lastname!=""&&school!=""&&grade!=0){
        const S = {
       name,
       lastname,
