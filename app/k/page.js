@@ -8,7 +8,8 @@ export default function Home() {
   const [school, setSchool] = useState("");
   const [students, setStuds] = useState([]);
   const Subm = () => {
-    const S = {
+    if(name !=""|| lastname!=""||school!=""||grade!=0){
+       const S = {
       name,
       lastname,
       school,
@@ -19,6 +20,7 @@ export default function Home() {
     setGrade("");
     setSchool("");
     setLastname("");
+    }
   };
   return (
     <div className="p-20 flex-col flex space-y-10 w-full justify-center items-center">
