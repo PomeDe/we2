@@ -21,6 +21,9 @@ export default function Home() {
     setSchool("");
     setLastname("");
     }
+    else{
+      alert("fill all of the input boxes please?!");
+    }
   };
   return (
     <div className="p-20 flex-col flex space-y-10 w-full justify-center items-center">
